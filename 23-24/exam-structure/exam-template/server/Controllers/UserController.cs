@@ -21,7 +21,7 @@ public class UserController : Controller
         
     // }
 
-    [HttpGet("users")]
+    [HttpGet("getUsers")]
     // - GET the users from 100 to 200 with a paginated endpoint
     public async Task<IActionResult> getUsers([FromQuery] int from, [FromQuery] int to)
     {

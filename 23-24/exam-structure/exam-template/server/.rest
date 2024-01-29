@@ -10,7 +10,15 @@ content-type: application/json
   "StudyPoints": "180"
 }
 #####
+POST http://localhost:5000/exam/createStudent
+content-type: application/json
 
+{ 
+  "Name": "Melih",
+  "Surname": "Bayrakdar",
+  "StudyPoints": "180"
+}
+#####
 DELETE http://localhost:5000/exam/deleteStudent?name=Giuseppe&surname=Maggiore
 #####
 # - write a .rest file that performs the following operations:  (2/10 points)
@@ -18,4 +26,5 @@ DELETE http://localhost:5000/exam/deleteStudent?name=Giuseppe&surname=Maggiore
 #   - POST a new user with an api token in the bearer token header
 #   - DELETE a user with an api token in the bearer token header
 
+GET http://localhost:5000/exam/getUsers?from=0&to=2
 #####
